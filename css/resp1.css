@@ -1,0 +1,540 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?bhcb89');
+    src:  url('../fonts/icomoon.eot?bhcb89#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?bhcb89') format('truetype'),
+      url('../fonts/icomoon.woff?bhcb89') format('woff'),
+      url('../fonts/icomoon.svg?bhcb89#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-play:before {
+    content: "\e912";
+  }
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-menu2:before {
+    content: "\e9be";
+  }
+  .icon-menu3:before {
+    content: "\e9bf";
+  }
+  .icon-menu4:before {
+    content: "\e9c0";
+  }
+  .icon-paragraph-justify:before {
+    content: "\ea7a";
+  }
+  .icon-google2:before {
+    content: "\ea89";
+  }
+  .icon-google3:before {
+    content: "\ea8a";
+  }
+  .icon-google-plus:before {
+    content: "\ea8b";
+  }
+  .icon-google-plus2:before {
+    content: "\ea8c";
+  }
+  .icon-google-plus3:before {
+    content: "\ea8d";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-whatsapp:before {
+    content: "\ea93";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-rss2:before {
+    content: "\ea9c";
+  }
+  .icon-youtube:before {
+    content: "\ea9d";
+  }
+  .icon-pinterest:before {
+    content: "\ead1";
+  }
+  .icon-pinterest2:before {
+    content: "\ead2";
+  }
+/************************************************************* end icon *************************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+}
+nav label.logo{
+    font-size: 20px;
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+    padding: 5px 15px;
+    margin-left: 5%;
+    line-height: 65px;
+}
+nav ul{
+    float: right;
+    margin-right: 5%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 10px;
+    line-height: 65px;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a.active, nav ul li a:hover{
+    text-decoration: underline;
+}
+nav #check{
+    display: none;
+}
+nav .checkbtn{
+    float: right;
+    font-size: 35px;
+    margin-right: 5%;
+    cursor: pointer;
+    display: none;
+}
+nav .checkbtn .icon{
+    line-height: 60px;
+}
+/************************************************************* end navbar *************************************************************/
+.page-1{
+    width: 100%;
+    margin-top: 1%;
+    transition: .5s;
+}
+.margin-page-1{
+    width: 100%;
+    margin-top: 360px;
+    transition: .5s;
+}
+.page-1 .img-page-1{
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+.page-1 .img-page-1 img{
+    width: 100%;
+}
+.page-1 .right-page-1{
+    float: right;
+    width: 47%;
+    margin-left: 3%;
+    display: inline-block;
+}
+.page-1 .right-page-1 h1{
+    font-size: 33px;
+    text-transform: uppercase;
+}
+.page-1 .right-page-1 hr{
+    width: 15%;
+    height: 6px;
+    color: #000;
+    background: #000;
+    margin: 2px 0;
+}
+.page-1 .right-page-1 .img-bot-page-1{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.page-1 .right-page-1 .img-bot-page-1 img:nth-child(1){
+    width: 48%;
+    margin-right: 1%;
+}
+.page-1 .right-page-1 .img-bot-page-1 img:nth-child(2){
+    width: 48%;
+    margin-left: 1%;
+    margin-bottom: 13.5%;
+}
+/************************************************************* end page-1 *************************************************************/
+.page-2{
+    background: #275f36;
+    width: 100%;
+    height: 130px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.page-2 h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.page-2 form input[type="email"]{
+    padding: 8px 15px;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.page-2 form input[type="submit"]{
+    background: #fff;
+    border: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bolder;
+}
+/************************************************************* end page-2 *************************************************************/
+.page-3{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5%;
+}
+.page-3 .left-page-3{
+    width: 36%;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.page-3 .left-page-3 p{
+    margin-bottom: 10px;
+}
+.page-3 .left-page-3 hr:nth-child(2),.page-3 .left-page-3 hr:nth-child(3){
+    width: 27%;
+    height: 6px;
+    color: #000;
+    background: #000;
+    margin: 2px 0;
+}
+.page-3 .left-page-3 hr:nth-child(3){
+    width: 13.5%;
+}
+.page-3 .right-page-3{
+    width: 64%;
+    overflow: hidden;
+    float: right;
+    display: inline-block;
+    font-size: 20px;
+    color: #222;
+}
+/************************************************************* end page-3 *************************************************************/
+.page-4{
+    width: 100%;
+    overflow: hidden;
+}
+.page-4 .border-page-4{
+    position: relative;
+    width: 31.333333%;
+    float: left;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.page-4 .border-page-4.center{
+    margin: 0px 3% 0 3%;
+}
+.page-4 .border-page-4 img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.page-4 .border-page-4 .h-img-page-4{
+    position: relative;
+    bottom: 101px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0% 12%;
+    height: 165px;
+}
+.page-4 .border-page-4 .h-img-page-4 h3{
+    text-align: center;
+}
+.page-4 .border-page-4 .h-img-page-4 hr{
+    width: 27%;
+    height: 6px;
+    color: #000;
+    background: #000;
+    margin: 2px 0;
+}
+.page-4 .border-page-4 .p-img-page-4{
+    margin-top: -20%;
+    font-size: 20px;
+    text-align: center;
+}
+/************************************************************* end page-4 *************************************************************/
+.page-5{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 3%;
+}
+.page-5 .img img{
+    width: 100%;
+}
+/************************************************************* end page-5 *************************************************************/
+.page-6{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5%;
+}
+.page-6 .img-left-page-6{
+    float: left;
+    width: 75%;
+}
+.page-6 .img-left-page-6 img{
+    width: 23%;
+    margin-right: 1%;
+}
+.page-6 .text-right-page-6{
+    width: 25%;
+    float: left;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 5%;
+}
+.page-6 .text-right-page-6 hr{
+    width: 100%;
+    height: 6px;
+    color: #000;
+    background: #000;
+    margin: 2px 0;
+}
+/************************************************************* end page-6 *************************************************************/
+.container hr{
+    width: 100%;
+    height: 6px;
+    color: #000;
+    background: #000;
+    margin: 2px 0;
+    margin-top: 2%;
+}
+.page-7{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+.page-7 h4{
+    font-size: 21px;
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+    padding: 8px 22px;
+    text-transform: uppercase;
+}
+.page-7 p{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.page-7 .icons{
+    font-size: 18px;
+}
+/************************************************************* end page-7 *************************************************************/
+footer{
+    background: #333;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    color: #fff;
+}
+/******************************************************************************************************************************/
+                                                /***** media query *****/
+/******************************************************************************************************************************/
+@media screen and (max-width: 686px){
+    nav .checkbtn{
+        display: block;
+    }
+    nav ul{
+        overflow: hidden;
+        position: absolute;
+        margin: 0 0;
+        margin-right: 0;
+        float: right;
+        width: 100%;
+        height: 0;
+        background-color: #ccc;
+        text-align: center;
+        border-radius: 10px;
+        left: 0;
+        right: 0;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        list-style: none;
+        padding-left: 0px;
+    }
+    #check:checked ~ ul{
+        height: 330px;
+    }
+}
+@media screen and (min-width: 670px) and (max-width: 768px){
+    .page-4 .border-page-4 {
+        position: relative;
+        width: 47%;
+        float: left;
+        overflow: hidden;
+    }
+    .page-6 .img-left-page-6 img {
+        width: 48%;
+        margin-right: 1%;
+    }
+    .page-4 .border-page-4.end {
+        margin-top: 20px;
+    }
+    .page-6 .text-right-page-6 {
+        width: 100%;
+    }
+    .page-6 .img-left-page-6 {
+        float: left;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 669px){
+    .page-3 .left-page-3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .page-3 .right-page-3 {
+        width: 100%;
+    }
+    .page-4 .border-page-4 {
+        position: relative;
+        width: 47%;
+        float: left;
+        overflow: hidden;
+    }
+    .page-6 .img-left-page-6 img {
+        width: 48%;
+        margin-right: 1%;
+    }
+    .page-6 .text-right-page-6 {
+        width: 100%;
+    }
+    .page-6 .img-left-page-6 {
+        float: left;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 610px){
+    .page-1 .img-page-1 {
+        width: 100%;
+    }
+    .page-1 .right-page-1 {
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-1 .right-page-1 hr {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .page-1 .right-page-1 h1 br {
+        display: none;
+    }
+    .page-1 .right-page-1 h1 {
+        font-size: 33px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 570px){
+    .page-4 .border-page-4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .page-4 .border-page-4 .p-img-page-4 {
+        margin-top: -17%;
+    }
+    .page-4 .border-page-4.center {
+        margin: 0px 0% 0 0%;
+    }
+    .page-7 p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px){
+    .page-1 .right-page-1 h1 {
+        font-size: 30px;
+    }
+    .page-2 h2 {
+        font-size: 25px;
+    }
+    .page-2 form input[type="email"] {
+        padding: 5px 0px;
+        font-size: 15px;
+    }
+    .page-2 form input[type="submit"] {
+        padding: 7.7px 7px;
+    }
+    .page-3 .left-page-3 {
+        font-size: 30px;
+    }
+    .page-3 .right-page-3 {
+        font-size: 17px;
+    }
+    .page-4 .border-page-4 .h-img-page-4 {
+        bottom: 72px;
+        font-size: 31px;
+        height: 130px;
+    }
+    .page-4 .border-page-4 .p-img-page-4 {
+        margin-top: -17%;
+        font-size: 18px;
+    }
+    .page-6 .text-right-page-6 {
+        font-size: 30px;
+    }
+}
